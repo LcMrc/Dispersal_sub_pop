@@ -32,5 +32,27 @@ gcc main.c -o main
 
 # Run the simulation
 ./main
+```
+### 2. `Matlab/`
+This folder contains **deme-level simulations** using a Gillespie algorithm.  
+These scripts simulate the dynamics at the level of demes rather than individuals, which allows **faster simulations** and **more stochastic replicates**. The results are consistent with the C simulations.
 
+Subfolders:
+- **Island/**
+- **SteppingStone/**
+
+Each subfolder contains:
+
+| File | Description |
+|------|-------------|
+| `RunFixationAnalysis.m` | Main script to run the simulation and generate plots. |
+| `GillespieDemeFixation.m` | Gillespie algorithm simulating fixation probability (mutants can either go extinct or fix). |
+| `GillespieDemeFixationConditioned.m` | Gillespie algorithm conditioned on mutant fixation, used to calculate fixation time, number of dispersal events, and number of local fixations. |
+
+**Usage:**
+
+1. Open Matlab.
+2. Navigate to the folder corresponding to the model:
+```matlab
+cd 'Matlab/Island'       % or 'Matlab/SteppingStone'
 
