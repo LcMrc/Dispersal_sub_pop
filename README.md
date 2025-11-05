@@ -13,7 +13,7 @@ If you find this code useful, **please cite the paper above**.
 ## Repository Structure
 
 ### 1. `C/`
-Contains **individual-based simulations** (birth, death, dispersal) in C.
+This folder contains **individual-based simulations** (birth, death, dispersal) in C.
 
 Subfolders:
 - **Island/**
@@ -57,4 +57,22 @@ Each subfolder contains:
 cd 'Matlab/Island'       % or 'Matlab/SteppingStone'
 3. Run the main analysis script RunFixationAnalysis
 ```
+### 3. `Mathematica/`
+This folder contains **analytical notebooks** based on the derivations presented in the paper.  
+These notebooks allow you to **visualize fixation probabilities, fixation times, and related statistics** analytically.
 
+| Notebook | Purpose |
+|----------|---------|
+| `computeFixationProbability.nb` | Computes and visualizes the fixation probability of mutants. |
+| `computeFixationProbabilityApproximation.nb` | Provides approximate analytical expressions for fixation probability. |
+| `computeFixationTimeDteppingStoneModel.nb` | Computes and visualizes fixation time in the Stepping-Stone model. |
+| `computeFixationTimeIslandModel.nb` | Computes and visualizes fixation time in the Island model. |
+| `computeNumberOfDispersalEvents.nb` | Computes and visualizes the mean number of dispersal events until global fixation. |
+| `computeNumberOfLocalFixations.nb` | Computes and visualizes the mean number of local fixations until global fixation. |
+
+**Usage:**
+```bash
+1. Open Mathematica.
+2. Navigate to the `Mathematica` folder.
+3. Open the notebook of interest.
+```
