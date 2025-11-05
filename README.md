@@ -50,9 +50,11 @@ Each subfolder contains:
 | `GillespieDemeFixationConditioned.m` | Gillespie algorithm conditioned on mutant fixation, used to calculate fixation time, number of dispersal events, and number of local fixations. |
 
 **Usage:**
-
+```bash
 1. Open Matlab.
 2. Navigate to the folder corresponding to the model:
 ```matlab
 cd 'Matlab/Island'       % or 'Matlab/SteppingStone'
+3. Run the main analysis script RunFixationAnalysis
+```
 
